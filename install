@@ -13,7 +13,14 @@
 
 # Move the files to /etc/.larasail and create a root larasail alias
 mv larasail-master/.larasail /etc/.larasail
-echo "alias larasail='sh /etc/.larasail/larasail'" >> /etc/bash.bashrc
+
+# Detect Ubuntu version
+Version=$(lsb_release -r)
+Versionnumber=$(cut -f2 <<< "$Version")
+echo "Using Ubuntu: ${Versionnumber}"
+
+# Using Ubuntu 18
+echo "alias larasail='sh /etc/.larasail/larasail'" >> /etc/skel/.bashrc
 
 
 # Create a new password and create our new larasail user
