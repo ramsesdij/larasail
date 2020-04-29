@@ -17,7 +17,7 @@ You'll need a Digital Ocean Account before getting started ([Signup here](https:
 SSH into your server and run the following command:
 
 ```
-curl -sL https://github.com/thedevdojo/larasail/archive/master.tar.gz | tar xz && source larasail-master/install
+curl -sL https://github.com/ramsesdij/larasail/archive/master.tar.gz | tar xz && source larasail-master/install
 ```
 
 You can make sure it's installed by running
@@ -32,7 +32,7 @@ larasail -h
 larasail setup
 ```
 
-The default configuration will install Nginx, PHP7.2, and MySQL 5.7. If you wish to use PHP7.1, you can include the argument `php71` like so:
+The default configuration will install Nginx, PHP7.3, and MySQL 5.7. If you wish to use PHP7.1, you can include the argument `php71` like so:
 
 ```
 larasail setup php71
